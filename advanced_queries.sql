@@ -2,6 +2,14 @@
 -- For all of these queries, you SHOULD NOT use an id # in a WHERE clause
 
 -- Find all fields (book and author related) for all books written by George R.R. Martin.
+	--	SELECT * FROM books JOIN authors ON (authors.name='George R.R. Martin'); 
+	--	SELECT * FROM authors WHERE name='George R.R. Martin' JOIN books;
+	--	SELECT * FROM books INNER JOIN authors WHERE name='George R.R. Martin';
+SELECT * FROM authors WHERE name='George R.R. Martin';
+id=8
+SELECT * FROM books WHERE authors.id=8;
+
+
 
 -- Find all fields (book and author related) for all books written by Milan Kundera.
 
